@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dhruv Bhatt — Data & Software Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Cursor glow -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <a href="#hero" class="nav-logo">DB</a>
+    <div class="nav-links">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#experience" class="mobile-link">Experience</a>
+    <a href="#projects" class="mobile-link">Projects</a>
+    <a href="#skills" class="mobile-link">Skills</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <canvas id="heroCanvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-tag reveal">
+        <span class="hero-tag-dot"></span>
+        Open to Opportunities
+      </div>
+      <h1 class="hero-name reveal">
+        <span class="hero-name-line">Dhruv</span>
+        <span class="hero-name-line accent">Bhatt</span>
+      </h1>
+      <p class="hero-title reveal">Data Engineer & Analyst</p>
+      <p class="hero-subtitle reveal">
+        I build data pipelines that scale, dashboards that tell stories,<br />
+        and software that solves real problems.
+      </p>
+      <div class="hero-cta reveal">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="hero-stat">
+          <span class="hero-stat-number" data-count="2">0</span>
+          <span class="hero-stat-label">Experiences</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-number" data-count="6">0</span>
+          <span class="hero-stat-label">Projects</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-number" data-count="15">0</span><span class="hero-stat-plus">+</span>
+          <span class="hero-stat-label">Technologies</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-heading reveal">
+        <span class="section-number">01.</span> About Me
+      </h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I'm a <strong>Computer Science Honours</strong> student at <strong>University of Alberta</strong>
+            (GPA: 3.7/4.0, Dean's Honour Roll-2 years), graduating December 2026. I thrive at the intersection
+            of data engineering, analytics, and software development.
+          </p>
+          <p>
+            From delivering excellent customer service at <strong>Walmart Canada</strong>
+            to designing ML-powered prediction models for <strong>F1 race strategy</strong>, I love turning
+            messy, complex data into clean, actionable insights through my projects and studies.
+          </p>
+          <p>
+            When I'm not writing SQL or wrangling DataFrames, you'll find me exploring new tech,
+            building side projects, or deep-diving into motorsport analytics.
+          </p>
+        </div>
+        <div class="about-details reveal">
+          <div class="about-card">
+            <div class="about-card-icon">🎓</div>
+            <div>
+              <h4>University of Alberta</h4>
+              <p>B.Sc. Computer Science Honours | GPA: 3.7/4.0</p>
+              <p class="about-card-sub">January 2023 – December 2026</p>
+              <p class="about-card-sub">Dean's Honour Roll: 2 years</p>
+            </div>
+          </div>
+          <div class="about-card">
+            <div class="about-card-icon">📍</div>
+            <div>
+              <h4>Based in</h4>
+              <p>Edmonton, Canada</p>
+            </div>
+          </div>
+          <div class="about-card">
+            <div class="about-card-icon">💼</div>
+            <div>
+              <h4>Looking for</h4>
+              <p>Data Engineering / Analyst / Software Dev roles</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="section section-alt" id="experience">
+    <div class="container">
+      <h2 class="section-heading reveal">
+        <span class="section-number">02.</span> Experience
+      </h2>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Grocery Associate</h3>
+                <p class="timeline-company">Walmart Canada</p>
+              </div>
+              <span class="timeline-date">May 2023 – Present</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Triaged <strong>100+ customer requests/day</strong> at peak; captured needs quickly, resolved issues, and prioritized tasks under time constraints while maintaining service quality</li>
+              <li>,<strong>Processed inventory</strong> and <strong>validated counts/labels</strong> to reduce stockouts and mislabels; prioritized tasks across
+              departments</li>
+              <li>Coordinated with floor/backroom teams via concise updates; maintained inclusive communication and calm escalation during high-traffic periods</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag">Customer Service</span>
+              <span class="tag">Inventory</span>
+              <span class="tag">Problem Solving</span>
+              <span class="tag">Teamwork</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Teaching Assistant</h3>
+                <p class="timeline-company">University of Alberta</p>
+              </div>
+              <span class="timeline-date">Sep 2025 – Dec 2025</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Led weekly seminars for <strong>~500 students</strong>; created rubrics/FAQs and standardized grading workflows across a 12-TA team to improve consistency</li>
+              <li>Analyzed grading and issue trends in <strong>Excel/Google Sheets</strong>; documented reproducible procedures and escalated edge cases with clear risk/impact context</li>
+              <li>Improved accessibility of materials through feedback loops; communicated technical concepts clearly to diverse audiences with strong documentation</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag">Teaching</span>
+              <span class="tag">Excel</span>
+              <span class="tag">Documentation</span>
+              <span class="tag">Communication</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section-heading reveal">
+        <span class="section-number">03.</span> Featured Projects
+      </h2>
+
+      <!-- Featured Project 1 -->
+      <div class="project-featured reveal">
+        <div class="project-featured-visual">
+          <div class="project-mockup f1-mockup">
+            <div class="mockup-header">
+              <div class="mockup-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <span class="mockup-title">f1_strategy_model.py</span>
+            </div>
+            <div class="mockup-body">
+              <pre><code><span class="code-comment"># F1 Race Pace Prediction</span>
+<span class="code-keyword">import</span> fastf1
+<span class="code-keyword">import</span> xgboost <span class="code-keyword">as</span> xgb
+
+<span class="code-comment"># Load 5 seasons of telemetry</span>
+sessions = load_data(<span class="code-string">"2019-2024"</span>)
+features = engineer_features(
+    tire_deg, fuel_load, track_temp,
+    sector_times, weather_data
+)
+
+model = xgb.XGBRegressor()
+model.fit(X_train, y_train)
+<span class="code-comment"># R² = 0.91 | MAE = 0.38s</span>
+
+pit_strategy = optimize_stops(
+    model, race_state, <span class="code-string">"Montreal"</span>
+)
+<span class="code-comment"># ✓ 2-stop undercut detected</span></code></pre>
+            </div>
+          </div>
+        </div>
+        <div class="project-featured-info">
+          <span class="project-label">Featured Project</span>
+          <h3>F1 Race Pace & Pit Strategy Prediction</h3>
+          <div class="project-description">
+            <p>
+              Built a machine learning pipeline that analyzes <strong>5 seasons of F1 telemetry data</strong>
+              to predict lap times and optimize pit stop strategy in real time. The XGBoost model
+              achieves <strong>R² = 0.91</strong> with a mean absolute error of just <strong>0.38 seconds</strong>.
+            </p>
+            <p>
+              Features engineered from tire degradation curves, fuel loads, weather data, and sector
+              performance to simulate full race scenarios and recommend optimal strategy windows.
+            </p>
+          </div>
+          <div class="project-tech">
+            <span>Python</span><span>XGBoost</span><span>FastF1</span>
+            <span>Pandas</span><span>Scikit-learn</span><span>Matplotlib</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/DhruvB100/F1-Race-Strategy" target="_blank" rel="noopener" class="project-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              Source Code
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Featured Project 2 -->
+      <div class="project-featured reverse reveal">
+        <div class="project-featured-visual">
+          <div class="project-mockup sentio-mockup">
+            <div class="mockup-header">
+              <div class="mockup-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <span class="mockup-title">Sentio — Mood Sharing</span>
+            </div>
+            <div class="mockup-body sentio-body">
+              <div class="sentio-ui">
+                <div class="sentio-mood-ring">
+                  <div class="sentio-emoji">😊</div>
+                </div>
+                <div class="sentio-label">Feeling great today</div>
+                <div class="sentio-bar-group">
+                  <div class="sentio-bar">
+                    <div class="sentio-bar-fill" style="width: 85%"></div>
+                    <span>Happy — 85%</span>
+                  </div>
+                  <div class="sentio-bar">
+                    <div class="sentio-bar-fill calm" style="width: 60%"></div>
+                    <span>Calm — 60%</span>
+                  </div>
+                  <div class="sentio-bar">
+                    <div class="sentio-bar-fill energy" style="width: 72%"></div>
+                    <span>Energized — 72%</span>
+                  </div>
+                </div>
+                <div class="sentio-friends">
+                  <span>👥 3 friends nearby</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project-featured-info">
+          <span class="project-label">Featured Project</span>
+          <h3>Sentio: Mood Sharing App</h3>
+          <div class="project-description">
+            <p>
+              Designed and built a <strong>full-stack Android application</strong> that lets users share
+              real-time mood states with nearby friends via GPS-based proximity detection.
+            </p>
+            <p>
+              Features a <strong>Firebase real-time backend</strong>, Google Maps integration for location
+              awareness, and a custom mood-ring UI. Built with clean MVVM architecture and
+              reusable Jetpack components.
+            </p>
+          </div>
+          <div class="project-tech">
+            <span>Java</span><span>Android SDK</span><span>Firebase</span>
+            <span>Google Maps API</span><span>MVVM</span><span>XML</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/DhruvB100/Sentio-MoodTrackingApp" target="_blank" rel="noopener" class="project-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              Source Code
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Featured Project 3 -->
+      <div class="project-featured reveal">
+        <div class="project-featured-visual">
+          <div class="project-mockup testbench-mockup">
+            <div class="mockup-header">
+              <div class="mockup-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <span class="mockup-title">testbench-ci — pipeline.yml</span>
+            </div>
+            <div class="mockup-body testbench-body">
+              <div class="ci-pipeline">
+                <div class="ci-stage done">
+                  <div class="ci-icon">✓</div>
+                  <span>Build</span>
+                </div>
+                <div class="ci-connector done"></div>
+                <div class="ci-stage done">
+                  <div class="ci-icon">✓</div>
+                  <span>API Tests</span>
+                </div>
+                <div class="ci-connector done"></div>
+                <div class="ci-stage done">
+                  <div class="ci-icon">✓</div>
+                  <span>UI Tests</span>
+                </div>
+                <div class="ci-connector running"></div>
+                <div class="ci-stage running">
+                  <div class="ci-icon spinner">⟳</div>
+                  <span>Deploy</span>
+                </div>
+              </div>
+              <div class="ci-stats">
+                <div class="ci-stat">
+                  <span class="ci-stat-val">148</span>
+                  <span class="ci-stat-label">Tests Passed</span>
+                </div>
+                <div class="ci-stat">
+                  <span class="ci-stat-val">0</span>
+                  <span class="ci-stat-label">Failed</span>
+                </div>
+                <div class="ci-stat">
+                  <span class="ci-stat-val">94%</span>
+                  <span class="ci-stat-label">Coverage</span>
+                </div>
+              </div>
+              <div class="ci-log">
+                <span class="ci-log-ok">✓ REST API — 62 endpoints validated</span>
+                <span class="ci-log-ok">✓ Selenium UI — 86 scenarios passed</span>
+                <span class="ci-log-run">⟳ Deploying to staging...</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project-featured-info">
+          <span class="project-label">Featured Project</span>
+          <h3>TestBench CI: API + UI Regression Suite</h3>
+          <div class="project-description">
+            <p>
+              Engineered a <strong>comprehensive automated testing framework</strong> that runs
+              API and UI regression suites in CI/CD pipelines. Covers 148 test scenarios
+              with <strong>94% code coverage</strong>.
+            </p>
+            <p>
+              REST API validation with <strong>RestAssured</strong>, browser-based UI testing with
+              <strong>Selenium WebDriver</strong>, and full GitHub Actions integration for automated
+              runs on every pull request.
+            </p>
+          </div>
+          <div class="project-tech">
+            <span>Java</span><span>RestAssured</span><span>Selenium</span>
+            <span>TestNG</span><span>GitHub Actions</span><span>Maven</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/DhruvB100/TestBench-CI" target="_blank" rel="noopener" class="project-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              Source Code
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <h2 class="section-heading reveal">
+        <span class="section-number">04.</span> Skills & Tools
+      </h2>
+      <div class="skills-grid">
+        <div class="skill-category reveal">
+          <h3 class="skill-category-title">Languages</h3>
+          <div class="skill-items">
+            <div class="skill-item"><span class="skill-dot"></span>Python</div>
+            <div class="skill-item"><span class="skill-dot"></span>SQL</div>
+            <div class="skill-item"><span class="skill-dot"></span>Java</div>
+            <div class="skill-item"><span class="skill-dot"></span>JavaScript</div>
+            <div class="skill-item"><span class="skill-dot"></span>R</div>
+            <div class="skill-item"><span class="skill-dot"></span>HTML / CSS</div>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h3 class="skill-category-title">Data & ML</h3>
+          <div class="skill-items">
+            <div class="skill-item"><span class="skill-dot"></span>Pandas / NumPy</div>
+            <div class="skill-item"><span class="skill-dot"></span>Scikit-learn</div>
+            <div class="skill-item"><span class="skill-dot"></span>XGBoost</div>
+            <div class="skill-item"><span class="skill-dot"></span>PySpark</div>
+            <div class="skill-item"><span class="skill-dot"></span>Matplotlib / Seaborn</div>
+            <div class="skill-item"><span class="skill-dot"></span>NLP / NLTK</div>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h3 class="skill-category-title">Cloud & DevOps</h3>
+          <div class="skill-items">
+            <div class="skill-item"><span class="skill-dot"></span>AWS (Lambda, S3, Glue)</div>
+            <div class="skill-item"><span class="skill-dot"></span>Azure Data Factory</div>
+            <div class="skill-item"><span class="skill-dot"></span>Docker</div>
+            <div class="skill-item"><span class="skill-dot"></span>GitHub Actions</div>
+            <div class="skill-item"><span class="skill-dot"></span>CI/CD Pipelines</div>
+            <div class="skill-item"><span class="skill-dot"></span>Linux / Bash</div>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h3 class="skill-category-title">Databases & BI</h3>
+          <div class="skill-items">
+            <div class="skill-item"><span class="skill-dot"></span>PostgreSQL</div>
+            <div class="skill-item"><span class="skill-dot"></span>MySQL</div>
+            <div class="skill-item"><span class="skill-dot"></span>MongoDB</div>
+            <div class="skill-item"><span class="skill-dot"></span>Firebase</div>
+            <div class="skill-item"><span class="skill-dot"></span>Power BI / DAX</div>
+            <div class="skill-item"><span class="skill-dot"></span>Tableau</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <div class="container contact-container">
+      <h2 class="section-heading reveal">
+        <span class="section-number">05.</span> Get In Touch
+      </h2>
+      <p class="contact-text reveal">
+        I'm currently looking for <strong>full-time opportunities</strong> in data engineering,
+        analytics, or software development. Whether you have a role in mind or just want to
+        connect — my inbox is always open.
+      </p>
+      <a href="mailto:dhruvchi@ualberta.ca" class="btn btn-primary btn-lg reveal">
+        Say Hello
+      </a>
+      <div class="contact-links reveal">
+        <a href="https://linkedin.com/in/dhruv-b-1aa777274/" target="_blank" rel="noopener" class="contact-icon" aria-label="LinkedIn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="https://github.com/DhruvB100" target="_blank" rel="noopener" class="contact-icon" aria-label="GitHub">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+        </a>
+        <a href="mailto:dhruvchi@ualberta.ca" class="contact-icon" aria-label="Email">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Designed & Built by Dhruv Bhatt</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
